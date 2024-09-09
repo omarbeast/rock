@@ -42,7 +42,7 @@ computerscore = 0 ;
 
 // logic of the game //
 
-function playround( ComputerChoice,userchoice)
+function playround()
 
 {
 
@@ -53,7 +53,7 @@ function playround( ComputerChoice,userchoice)
         {
 
         console.log("you won");
-        humanscore ++ ;
+        humanscore ++ ; 
 
         }  
 
@@ -66,8 +66,14 @@ function playround( ComputerChoice,userchoice)
             computerscore ++;
         }
         
+            ////// tie /////
 
-        else { console.log("its a tie")}
+            
+        else if  (random === userselection)
+            
+            {
+                 console.log("its a tie")
+                }
 
 
 }
